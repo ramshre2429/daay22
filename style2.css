@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    min-height: 100vh;
+    background: #EEE;
+}
+
+.card__basic,
+.card__premium,
+.card__pro {
+    width: 250px;
+    background-color: #F7F9F9;
+    box-shadow: 0px 5px 10px black;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card__basic,
+.card__pro {
+    margin: 1rem 0;
+}
+
+.card__title {
+    background: #2C73A3;
+    color: #FFF;
+    padding: 10px;
+}
+
+.card__list li {
+    padding: 15px;
+    border-top: 1px solid #EEE;
+    list-style: none;
+}
+
+.price {
+    background-color: #F7F9F9;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    margin: 1rem;
+    padding: .5rem 1.5rem;
+    border: 0;
+    border-radius: 8px;
+    background: #003a60;
+    color: #FFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+button:hover {
+    background: #3AB0CC;
+}
+
+@media (min-width: 875px) {
+
+    .card__basic,
+    .card__pro {
+        margin: 1rem 0;
+        position: relative;
+        top: 20px;
+    }
+}

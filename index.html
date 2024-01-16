@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span id="old">Learning is very intresting</span>
+    <button id="one">add</button>
+    <script>
+        function onclick() {
+            let old = document.getElementById("old");
+            old.innerHTML = "Learning React is very intresting";
+        }
+        let one = document.getElementById("one")
+        one.addEventListener("click", onclick);
+
+
+    </script>
+</body>
+
+</html>
